@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="ml-5 mt-5">
+      <h1>Examen: Jorge Mochon Bernal</h1>
+    </header>
+
+    <main class="ml-5">
+      <section>
+        <h2>Ejercicio 1</h2>
+        <time id="hora">02</time>
+        <span>:</span>
+        <time id="minutos">00</time> <br />
+        <button type="button" id="cronometro" class="btn btn-dark">
+          Empezar
+        </button>
+        <button type="button" id="reset" class="btn btn-outline-danger">
+          Danger
+        </button>
+      </section>
+      <section>
+        <h2>Ejercicio 2</h2>
+        <form action="#">
+          <label for="nombre">Nombre</label>
+          <input class="form-control form-control-lg" type="text" id="nombre" />
+
+          <label for="edad">Edad</label>
+          <input class="form-control form-control-lg" type="number" id="edad" />
+
+          <label for="altura">Altura</label>
+          <input
+            class="form-control form-control-lg"
+            type="number"
+            id="altura"/>
+
+          <label for="dni">DNI</label>
+          <input class="form-control form-control-lg" type="text" id="dni" />
+
+          <label for="email">Email</label>
+          <input class="form-control form-control-lg" type="email" id="email" />
+
+          <button id="validar" type="button" class="btn btn-dark">
+            Enviar datos a la tabla
+          </button>
+        </form>
+        <p id="r1"></p>
+        <p id="r2"></p>
+        <p id="r3"></p>
+        <p id="r4"></p>
+        <p id="r5"></p>
+      </section>
+      <section>
+          <h2>Ejercicio 3</h2>
+          <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Altura</th>
+                    <th>dni</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+          <button type="button" id="btn-editar" class="btn btn-outline-success">Editar</button>
+          <button type="button" id="btn-eliminar" class="btn btn-outline-danger">Eliminar</button>
+      </section>
+    </main>
+  </body>
+  <script type="module" src="./js/app.js"></script>
+</html>
